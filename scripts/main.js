@@ -18,7 +18,7 @@ function setUserName() {
     setUserName();
   } else {
     localStorage.setItem("name", myName);
-    myHeading.textContent = `Rabbaniyyun online school welcomes you, ${myName}`;
+    myHeading.textContent = `Daurawa online school welcomes you, ${myName}`;
   }
 }
 
@@ -26,7 +26,7 @@ if (!localStorage.getItem("name")) {
   setUserName();
 } else {
   const storedName = localStorage.getItem("name");
-  myHeading.textContent = `Rabbaniyyun online school welcomes you, ${storedName}`;
+  myHeading.textContent = `Daurawa online school welcomes you, ${storedName}`;
 }
 
 myButton.addEventListener("click", () => {
